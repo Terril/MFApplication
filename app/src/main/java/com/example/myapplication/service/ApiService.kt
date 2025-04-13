@@ -7,19 +7,6 @@ import com.example.myapplication.data.GithubUserRepos
 import retrofit2.http.*
 
 interface ApiService {
-    companion object {
-        var BASE_URL = "Constants.apiURL"
-    }
-
-    @Headers("Accept: application/json")
-//    @GET("/search/repositories")
-//    suspend fun getSearchResult(
-//        @Query("q") query: String,
-//        @Query("") page: Int,
-//        @Query("per_page") perPage: Int,
-//        @Query("sort") sort:String,
-//        @Query("order") order: String
-//    ): Item
 
     @GET("users")
     suspend fun getGithubUser(@Header("Authorization") authorization: String = BuildConfig.TOKEN):

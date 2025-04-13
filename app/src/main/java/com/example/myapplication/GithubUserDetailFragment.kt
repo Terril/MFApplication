@@ -41,7 +41,7 @@ class GithubUserDetailFragment : Fragment() {
     private val viewModel by viewModels<GithubViewModel> { viewModelFactory }
 
     override fun onAttach(context: Context) {
-        AndroidSupportInjection.inject(this) // <- This triggers automatic injection
+        AndroidSupportInjection.inject(this)
         super.onAttach(context)
     }
 
