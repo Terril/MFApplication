@@ -24,7 +24,7 @@ import javax.inject.Inject
 
 class GithubUserListFragment : Fragment() {
 
-    private lateinit var userListAdapter: UserListAdapter
+    lateinit var userListAdapter: UserListAdapter
     private var _binding: FragmentGithubUserListBinding? = null
 
     private val binding get() = _binding!!

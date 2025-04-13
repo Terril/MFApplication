@@ -29,6 +29,15 @@
             </intent-filter>
 
         </activity>
+        <activity
+            android:name=".EmptyTestActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"
+            android:exported="true" />
+
+        <activity
+            android:name="androidx.fragment.app.testing.FragmentScenario$EmptyFragmentActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"
+            android:exported="true" />
     </application>
 
 </manifest>

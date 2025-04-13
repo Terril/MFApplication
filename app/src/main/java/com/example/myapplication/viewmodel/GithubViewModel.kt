@@ -14,10 +14,9 @@ import kotlinx.coroutines.flow.combine
 import kotlinx.coroutines.launch
 import javax.inject.Inject
 
-class GithubViewModel @Inject constructor(
+open class GithubViewModel @Inject constructor(
     private val repository: GithubRepository
 ) : ViewModel() {
-
 
     private val _userState = MutableStateFlow<Result<List<GithubUser.Item>>>(Result.Loading)
     val userState: StateFlow<Result<List<GithubUser.Item>>> = _userState

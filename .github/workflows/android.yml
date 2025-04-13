@@ -15,5 +15,5 @@ jobs:
 
       - name: Build with Gradle and pass token
         env:
-          TOKEN: ${{ secrets.GITHUB_API_TOKEN }}
+          TOKEN: ${{ secrets.TOKEN }}
         run: ./gradlew assembleDebug -DTOKEN=$TOKEN
