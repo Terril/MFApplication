@@ -1,18 +1,19 @@
 **MFApplication**
-The application uses githubAPI to fetch users, details and Repos
+
+The application uses GitHub API to fetch users, details and repos
 
 *Funcationality*
-- Can see list of githubuser
-- Can search for user based on the displayed users
+- Can see the list of GitHub users
+- Can search for a user based on the displayed users
 - Can view details about the user
 - Can see the repos of the users which are not the forked ones
 
 *Usage*
 - We have used Dagger 2 for Dependency Injection
-- View Binding for binding view with the source
+- View Binding for binding the view with the source
 - Retrofit for API implementation
 
 *Testcases*
 - Included UI testcase for UserList screen
-- Included UI testcase for the Userdetail screen
-- Added Unittest case for the ViewModel
+- Included UI testcase for the User detail screen
+- Added UnitTest case for the ViewModel
